@@ -10,18 +10,18 @@ function off() {
 function alertar() {
   var intervalo = 0;
   var contador = 0;
-  while (contador < 20) {
+  while (contador < 10) {
     intervalo += 300;
     setTimeout(
       "document.getElementById('lamp') .src = 'imagens/lampada_ligada.png';",
       intervalo
     );
-    intervalo += 100;
+    intervalo += 300;
     setTimeout(
       "document.getElementById('lamp') .src = 'imagens/lampada_desligada.png';",
       intervalo
     );
-    intervalo += 100;
+    intervalo += 300;
 
     contador++;
   }
